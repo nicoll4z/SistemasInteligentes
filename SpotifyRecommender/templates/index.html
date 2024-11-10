@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+    <main class="index-main">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- Removido o "Artists" -->
+                <div class="carousel-item songs active">
+                    <a href="/songs">
+                        <div class="carousel-area">
+                            <h1>Recomendação de musicas</h1>
+                            <span>Receba uma playlist personalizada com base nas suas músicas mais escutadas! </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>        
+    </main>
+
+{% endblock %}

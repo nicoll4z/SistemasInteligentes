@@ -1,0 +1,274 @@
+/* Import a similar font of Spotify */
+@font-face {
+    font-family: 'Spotify';
+    src: 
+        url('font/Gotham-Black.otf') format('opentype'),
+        url('font/Gotham-Black.otf') format('truetype');
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Spotify', 'Times', 'Arial';
+    box-sizing: border-box;
+}
+
+/* SCROLLBAR CUSTOMIZATION */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+body::-webkit-scrollbar-track {
+    background: none    ;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #1DB954;
+}
+
+/*GENERAL SETTINGS*/
+body {
+    background-color: black;
+}
+/* Navbar settings */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    width: 100%;
+    font-size: 17px;
+}
+nav .pages {
+    padding-left: 10px;
+}
+nav .pages a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 20px;
+}
+nav .pages a:hover {
+    color: #1DB954;
+}
+#user {
+    display: flex;
+    background-color: #1DB954;
+    align-items: center;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.user_picture {
+    margin-right: 10px;
+}
+.user_picture img {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+.arrow {
+    border-top: 7px solid #000;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    margin: 0 10px;
+    float: left;
+}
+.log_out {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 63px;
+    background-color: black;
+    border: 1px solid #1DB954;
+    border-radius: 15px;
+    padding: 10px;
+    height: auto;
+    width: 145px;
+    text-align: center;
+}
+.log_out a {
+    text-decoration: none;
+    color: #1DB954;
+}
+/* Buttons settings */
+button {
+    outline: none;
+}
+.action-button {
+    cursor: pointer;
+    background-color: black;
+    color: #1DB954;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    border-radius: 12px;
+    border: 1px solid #1DB954;
+    margin-left: 20px;
+    transition: all 0.3s linear;
+}
+.action-button:hover {
+    box-shadow: 0px 0px 20px #1DB954;
+}
+/* Main settings */
+.description {
+    font-size: 17px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.artist_main, .songs_main, .top_tracks_main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+
+/* Login Page */
+#login-main {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    background-image: url(/static/images/background_login.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 10px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8 );
+}
+.container-login div{
+    flex: 1;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+.title h1 {
+    font-size: 100px;
+    color: #1DB954;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.desc p {
+    margin-top: 30px;
+    color: whitesmoke;
+    font-size: 22px;
+}
+.login-button {
+    margin-top: 40px;
+}
+.login-button a {
+    background-color: #1DB954;
+    padding: 20px;
+    font-size: 22px;
+    border-radius: 40px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.2s linear;
+}
+.login-button a:hover {
+    box-shadow: 0px 0px 20px #1DB954;
+}
+
+/* Home page */
+.navhome span {
+    color: whitesmoke;
+}
+
+.index-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 68px);
+}
+.index-main h6 {
+    font-size: 30px;
+    padding-left: 20px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.carousel-inner {
+    margin-top: 40px;
+    border: 2px solid #1DB954;
+    border-radius: 30px;
+}
+.carousel-indicators .active {
+    background-color: #1DB954;
+}
+.carousel-item a {
+    text-decoration: none;
+}
+
+.carousel-item.songs {
+    background-image: url(/static/images/songs_slide.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-area {
+    height: 65vh;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.75 );
+    text-align: center;
+}
+.carousel-area h1 {
+    color: #1DB954;
+}
+.carousel-area span {
+    color: whitesmoke;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+
+/* Songs */
+.songs_main .iframe {
+    height: 67vh;
+}
+.playlist_link {
+    margin-top: 30px;
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+}
+.playlist_link a {
+    color: #1DB954;
+}
+
+
+
+

@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Songs
+{% endblock %}
+
+{% block main %}
+    <main class="songs_main">
+        <span class="description">A playlist foi criada diretamente no seu spotify com 50 músicas recomendadas de forma personalizada.</span>
+        <button id="newPlaylist" class="action-button">Gerar nova playlist</button>
+        <div class="embed-responsive embed-responsive-16by9 iframe">
+            <iframe style="border-radius:12px" id="songsFrame" src="https://open.spotify.com/embed/playlist/{{ playlist_id }}?utm_source=generator&theme=0" 
+            frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <span class="playlist_link">Você pode modificar ou execluir a playlist em <a href="https://open.spotify.com/playlist/{{ playlist_id }}" target="_blank"> Spotify </a> , ou diretamente no seu app Spotify.</span>
+    </main>
+{% endblock %}
