@@ -55,6 +55,8 @@ Testar a compatibilidade com dispositivos móveis e web.
 
 
 ######### COMO UTILIZAR #########
+
+
 Passo 1: Instalação do Spotipy e Scikit-learn
 Para começar, instale as bibliotecas necessárias:
 pip install spotipy
